@@ -93,7 +93,7 @@ export default function App() {
             All structural and hazard classifications are preliminary computerized evaluations. Always consult licensed structural engineers (IS 456 / OSHA / NBC).
           </p>
           <div className="pt-2 text-[10px] text-slate-600 font-mono">
-            FastAPI Backend: http://127.0.0.1:8000 • Vite Client: http://127.0.0.1:5173
+            FastAPI Backend • Vite React Frontend • Multi-Service Architecture
           </div>
         </div>
       </footer>

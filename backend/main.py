@@ -65,6 +65,7 @@ def root():
     }
 
 @app.get("/api/health")
+@app.get("/health")
 def health_check():
     key_configured = has_api_key()
     return {
@@ -76,6 +77,7 @@ def health_check():
 
 
 @app.post("/api/safety-analysis")
+@app.post("/safety-analysis")
 async def safety_analysis(file: UploadFile = File(...)):
     """
     Multimodal construction site safety audit endpoint.
@@ -102,6 +104,7 @@ async def safety_analysis(file: UploadFile = File(...)):
 
 
 @app.post("/api/crack-analysis")
+@app.post("/crack-analysis")
 async def crack_analysis(file: UploadFile = File(...)):
     """
     Multimodal crack diagnostics & structural integrity assessment.
@@ -128,6 +131,7 @@ async def crack_analysis(file: UploadFile = File(...)):
 
 
 @app.post("/api/project-planning")
+@app.post("/project-planning")
 def project_planning(req: ProjectPlanRequest):
     """
     Construction project planning endpoint.
@@ -154,6 +158,7 @@ def project_planning(req: ProjectPlanRequest):
 
 
 @app.post("/api/assistant")
+@app.post("/assistant")
 def assistant_advisory(req: AssistantRequest):
     """
     Interactive construction engineering assistant endpoint.
