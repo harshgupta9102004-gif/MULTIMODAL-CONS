@@ -29,6 +29,10 @@ app = FastAPI(
     version="1.0.0"
 )
 
+# Export aliases for Vercel Python runtime
+application = app
+handler = app
+
 # Enable CORS for frontend Vite development and production
 app.add_middleware(
     CORSMiddleware,
