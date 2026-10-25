@@ -12,6 +12,7 @@
     "app": {
       "root": ".",
       "runtime": "python",
+      "entrypoint": "app.py",
       "bindings": [
         {
           "type": "service",
